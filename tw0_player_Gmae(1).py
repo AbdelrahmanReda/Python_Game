@@ -7,7 +7,7 @@ p2=0
 detecting_player = 0
 #-------
 letter_list = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J']
-#random.shuffle(letter_list)
+random.shuffle(letter_list)
 print(letter_list)
 
 numbers = '12345678901234567890'
@@ -20,7 +20,6 @@ while True:
         print('player two turn')
     while True:
         if detecting_player % 2 == 0:
-
             x1 = input('please enter your first number : ')
             xx = list(x1)
             detection = []
@@ -38,14 +37,7 @@ while True:
                     x1=input('enter a valid numbers')
                     xx = list(x1)
                     detection = []
-            x1=int(x1)
-
-
-
-
-
-
-            
+            x1=int(x1)    
             x2 = input('please enter your second number : ')
             xx = list(x2)
             detection = []
@@ -63,15 +55,7 @@ while True:
                     x2=input('enter a valid numbers')
                     xx = list(x2)
                     detection = []
-            x2=int(x2)
-
-            
-
-
-
-
-
-            
+            x2=int(x2)         
         else:
 
             x1 =input('please enter your first number : ')
@@ -110,15 +94,7 @@ while True:
                     x2=input('enter a valid numbers')
                     xx = list(x2)
                     detection = []
-            x2=int(x2)
-
-
-            
-
-
-
-
-            
+            x2=int(x2)            
         if x1 <21 and x2 <21 and x1!=x2 and x1 != 0 and x2 != 0 :
 
             if numbers_in_list[x1-1] !='*' and numbers_in_list[x2-1] !='*' :
